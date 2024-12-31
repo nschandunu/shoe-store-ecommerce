@@ -21,7 +21,7 @@ const Header = () => {
             {/*Logo left side */}
             <Link to="/" className='flex flex-1'>
                 <div className='bold-32'>
-                    Shoe<span className='text-secondary'>s</span>
+                    Evo<span className='text-secondary'>Step</span>
                 </div>
             </Link>
 
@@ -49,7 +49,7 @@ const Header = () => {
                 <div className='group relative'>
                     <div>
                         {token ? (
-                            <div><TbUserCirclecla className='text-[29px] cursor-pointer' /></div>
+                            <div><TbUserCircle className='text-[29px] cursor-pointer' /></div>
                         ) : (
                             <button className='btn-light flexCenter gap-x-2'>Login<RiUserLine className='text-xl'/></button>)}
                     </div>

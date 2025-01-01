@@ -1,30 +1,27 @@
-import img1_1 from './products/veja/veja_1.png'
-import img1_2 from './products/veja/veja_2.png'
-import img1_3 from './products/veja/veja_3.png'
-import img1_4 from './products/veja/veja_4.png'
+import img1_1 from './product_1_1.png'
+import img1_2 from './product_1_2.png'
+import img1_3 from './product_1_3.png'
+import img1_4 from './product_1_4.png'
 
-import img2_1 from './products/stone island/stone_1.png'
-import img2_2 from './products/stone island/stone_2.png'
-import img2_3 from './products/stone island/stone_3.png'
-import img2_4 from './products/stone island/stone_4.png'
+import img2_1 from './product_2_1.png'
+import img2_2 from './product_2_2.png'
+import img2_3 from './product_2_3.png'
+import img2_4 from './product_2_4.png'
 
-import img3_1 from './products/stan smith/smith1.png'
-import img3_2 from './products/stan smith/smith2.png'
-import img3_3 from './products/stan smith/smith3.png'
-import img3_4 from './products/stan smith/smith4.png'
+import img3_1 from './product_3_1.png'
+import img3_2 from './product_3_2.png'
+import img3_3 from './product_3_3.png'
+import img3_4 from './product_3_4.png'
 
-import img4_1 from './products/hoka/hoka1.png'
-import img4_2 from './products/hoka/hoka2.png'
-import img4_3 from './products/hoka/hoka3.png'
-import img4_4 from './products/hoka/hoka4.png'
+import img4_1 from './product_4_1.png'
+import img4_2 from './product_4_2.png'
+import img4_3 from './product_4_3.png'
+import img4_4 from './product_4_4.png'
 
-import img5_1 from './products/timberland/timberland1.png'
-import img5_2 from './products/timberland/timberland2.png'
-import img5_3 from './products/timberland/timberland3.png'
-import img5_4 from './products/timberland/timberland4.png'
-
-
-
+import img5_1 from './product_5_1.png'
+import img5_2 from './product_5_2.png'
+import img5_3 from './product_5_3.png'
+import img5_4 from './product_5_4.png'
 
 
 // Blogs
@@ -44,7 +41,7 @@ export const products = [
         category: "Men",
         subCategory: "Sneakers",
         sizes: ["6","7", "8", "9","10"],
-        date: 1735657611581,
+        date: 1735639200000,
         popular: true
     },
     {
@@ -56,10 +53,9 @@ export const products = [
         category: "Men",
         subCategory: "Sneakers",
         sizes: ["6","7", "8", "9","10"],
-        date: 1735657611581,
+        date: 1735639200000,
         popular: false
     },
-
     {
         _id: "3",
         name: "Stan Smith OG",
@@ -69,10 +65,9 @@ export const products = [
         category: "Men",
         subCategory: "Sneakers",
         sizes: ["6","7", "8", "9","10"],
-        date: 1735657611581,
+        date: 1735639200000,
         popular: true
     },
-
     {
         _id: "4",
         name: "HOKA ONE ONE WMNS BONDI 8",
@@ -82,10 +77,9 @@ export const products = [
         category: "Women",
         subCategory: "Sports",
         sizes: ["6","7", "8", "9","10"],
-        date: 1735657611581,
+        date: 1735639200000,
         popular: false
     },
-    
     {
         _id: "5",
         name: "TIMBERLAND X PROJECT PONT 6 PREMIUM",
@@ -95,9 +89,12 @@ export const products = [
         category: "Men",
         subCategory: "Boots",
         sizes: ["6","7", "8", "9","10","11"],
-        date: 1735657611581,
+        date: 1735639200000,
         popular: false
     },
+
+
+
 
 ]
 

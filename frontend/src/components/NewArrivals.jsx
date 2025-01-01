@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import Product from '../pages/Product';
+import { products } from '../assets/data';
 
 
 const NewArrivals = () => {
@@ -18,7 +18,7 @@ const NewArrivals = () => {
   const [newArrivals, setNewArrivals] = useState([])
 
   useEffect(() => {
-    const data = Product
+    const data = products.slice(0, 10)
   })
 
   

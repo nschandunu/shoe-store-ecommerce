@@ -117,8 +117,8 @@ export const products = [
 ]
 
 export const blogs = [
-    {title:"Top Shopping Tips for Smart Buyers", category: "Men", image: blog1 },
-    {title:"Latest Trends in Online Shopping 2024", category: "Women", image: blog2 },
-    {title:"How to Spot the Best Deals Online", category: "Kids", image: blog3 },
-    {title:"Why E-Commerce is the Future of Shopping", category: "Topwear", image: blog4 }
+    {title:"Step Up Your Style: Smart Shopping Tips", category: "Shopping", image: blog1 },
+    {title:"Trending Footwear Styles to Watch in 2024", category: "Shoes", image: blog2 },
+    {title:"Latest Trends in Online Shopping 2024", category: "Shopping", image: blog3 },
+    {title:"Why E-Commerce is the Future of Shopping", category: "E-Commerce", image: blog4 }
   ]

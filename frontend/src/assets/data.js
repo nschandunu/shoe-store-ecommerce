@@ -23,6 +23,11 @@ import img5_2 from './product_5_2.png'
 import img5_3 from './product_5_3.png'
 import img5_4 from './product_5_4.png'
 
+import img6_1 from './product_6_1.png'
+import img6_2 from './product_6_2.png'
+import img6_3 from './product_6_3.png'
+import img6_4 from './product_6_4.png'
+
 
 // Blogs
 import blog1 from "../assets/blogs/blog1.png"
@@ -41,7 +46,7 @@ export const products = [
         category: "Men",
         subCategory: "Sneakers",
         sizes: ["6","7", "8", "9","10"],
-        date: 1735639200000,
+        date: 1735641000000,
         popular: true
     },
     {
@@ -53,7 +58,7 @@ export const products = [
         category: "Men",
         subCategory: "Sneakers",
         sizes: ["6","7", "8", "9","10"],
-        date: 1735639200000,
+        date: 1735641000000,
         popular: false
     },
     {
@@ -65,7 +70,7 @@ export const products = [
         category: "Men",
         subCategory: "Sneakers",
         sizes: ["6","7", "8", "9","10"],
-        date: 1735639200000,
+        date: 1735641000000,
         popular: true
     },
     {
@@ -77,7 +82,7 @@ export const products = [
         category: "Women",
         subCategory: "Sports",
         sizes: ["6","7", "8", "9","10"],
-        date: 1735639200000,
+        date: 1735641000000,
         popular: false
     },
     {
@@ -89,7 +94,20 @@ export const products = [
         category: "Men",
         subCategory: "Boots",
         sizes: ["6","7", "8", "9","10","11"],
-        date: 1735639200000,
+        date: 1735641000000,
+        popular: false
+    },
+
+    {
+        _id: "6",
+        name: "WMNS V2K RUN",
+        description: "Step into style and comfort with the WMNS V2K RUN, blending retro aesthetics with modern performance. Featuring a sleek design in PURE PLATINUM/MTLC COOL GREY-WOLF G, this sneaker offers lightweight cushioning and durable materials for all-day wear. Perfect for both casual and active lifestyles.",
+        price: 320,
+        image: [img6_1, img6_2, img6_3, img6_4],
+        category: "Men",
+        subCategory: "Sports",
+        sizes: ["6","7", "8", "9","10","11"],
+        date: 1735641000000,
         popular: false
     },
 

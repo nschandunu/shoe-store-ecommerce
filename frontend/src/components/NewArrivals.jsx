@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { products } from '../assets/data';
+import Item from './Item';
 
 
 const NewArrivals = () => {
@@ -19,15 +20,16 @@ const NewArrivals = () => {
 
   useEffect(() => {
     const data = products.slice(0, 10)
-  })
+    setNewArrivals(data)
+  }, [products]) 
 
   
 
 
   return (
-    <section>
-      <Title />
-      {/* Swiper container  */}
+    <section className='max-padd-container pt-16 pb-6 bg-primary'>
+      <Title title1={'New'} title2={'Arrivals'} titleStyles={'pb-10'} paraStyles={'!block'}/>
+      {/* Swiper container */}
       <Swiper
         autoplay={{
           delay: 3500,
@@ -51,14 +53,17 @@ const NewArrivals = () => {
           },
           1200: {
             slidesPerView: 5,
-              spaceBetween: 30,
-          }}
-        }
+            spaceBetween: 30,
+          },
+        }}
         modules={[Autoplay, Pagination]}
-        className="h-[555px]"
+        className="h-[555px] sm:h-[411px] md:h-[488px]"
       >
-        {NewArrivals}
-        <SwiperSlide>Slide 1</SwiperSlide>
+        {newArrivals.map((product) => (
+          <SwiperSlide key={product._id}>
+            <Item product={product}/>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   )

@@ -7,7 +7,7 @@ const Blog = () => {
     <section className='max-padd-container py-16'>
       <Title 
         title1={'Our Expert'} 
-        title2={'Blog'}
+        title2={'Blogs'}
         titleStyles={'pb-10'} 
         paraStyles={'!block'} 
       />

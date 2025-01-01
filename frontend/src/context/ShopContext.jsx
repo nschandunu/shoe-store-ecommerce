@@ -9,7 +9,7 @@ const ShopContextProvider = (props) => {
     const delivery_charges = 10
     const navigate = useNavigate()
 
-    const [products, setProducts] = useState([])
+    
     const value = {
         currency, 
         products, 

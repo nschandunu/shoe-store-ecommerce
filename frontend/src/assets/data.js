@@ -59,7 +59,7 @@ export const products = [
         subCategory: "Sneakers",
         sizes: ["6","7", "8", "9","10"],
         date: 1735641000000,
-        popular: false
+        popular: true
     },
     {
         _id: "3",
@@ -83,7 +83,7 @@ export const products = [
         subCategory: "Sports",
         sizes: ["6","7", "8", "9","10"],
         date: 1735641000000,
-        popular: false
+        popular: true
     },
     {
         _id: "5",
@@ -95,7 +95,7 @@ export const products = [
         subCategory: "Boots",
         sizes: ["6","7", "8", "9","10","11"],
         date: 1735641000000,
-        popular: false
+        popular: true
     },
 
     {
@@ -108,7 +108,7 @@ export const products = [
         subCategory: "Sports",
         sizes: ["6","7", "8", "9","10","11"],
         date: 1735641000000,
-        popular: false
+        popular: true
     },
 
 

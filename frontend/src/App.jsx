@@ -8,7 +8,7 @@ import Product from './pages/Product'
 
 const App = () => {
   return (
-    <main>
+    <main className='overflow-x-hidden text-[#404040]'> 
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

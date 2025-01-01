@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Title from './Title'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,13 +9,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { products } from '../assets/data';
+// import { products } from '../assets/data';
 import Item from './Item';
+import { ShopContext } from '../context/ShopContext'; 
 
 
 const NewArrivals = () => {
 
-
+  const {products} = useContext(ShopContext)
   const [newArrivals, setNewArrivals] = useState([])
 
   useEffect(() => {

@@ -5,17 +5,16 @@ import { products } from '../assets/data'
 export const ShopContext = createContext()
 
 const ShopContextProvider = (props) => {
-    const currency = '$'
+
+    const currency = "$"
     const delivery_charges = 10
     const navigate = useNavigate()
+    const [search, setSearch] = useState("")
+    const [showSearch, setShowSearch] = useState(true)
+    const [token, setToken] = useState('')
 
     
-    const value = {
-        currency, 
-        products, 
-        delivery_charges, 
-        navigate
-    }
+    const value = { currency, delivery_charges, navigate, products, token, setToken, search, setSearch, showSearch, setShowSearch }
 
     return (
         <ShopContext.Provider value={value}>

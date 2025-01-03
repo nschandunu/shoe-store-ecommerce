@@ -3,7 +3,7 @@ import Header from './components/Header'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Testimonials from './pages/Testimonials'
-import Collection from './pages/collection'
+import Collection from './pages/Collection'
 import Product from './pages/Product'
 
 const App = () => {

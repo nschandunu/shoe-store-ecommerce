@@ -7,9 +7,6 @@ import PopularProducts from '../components/PopularProducts'
 import Blog from '../components/Blog'
 import Footer from '../components/Footer'
 
-
-
-
 const Home = () => {
   return (
     <>
@@ -20,7 +17,6 @@ const Home = () => {
       <PopularProducts />
       <Blog />
       <Footer />
-
     </>
   )
 }

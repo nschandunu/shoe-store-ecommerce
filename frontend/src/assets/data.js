@@ -28,6 +28,31 @@ import img6_2 from './product_6_2.png'
 import img6_3 from './product_6_3.png'
 import img6_4 from './product_6_4.png'
 
+import img7_1 from './product_7_1.png'
+import img7_2 from './product_7_2.png'
+import img7_3 from './product_7_3.png'
+import img7_4 from './product_7_4.png'
+
+import img8_1 from './product_8_1.png'
+import img8_2 from './product_8_2.png'
+import img8_3 from './product_8_3.png'
+import img8_4 from './product_8_4.png'
+
+import img9_1 from './product_9_1.png'
+import img9_2 from './product_9_2.png'
+import img9_3 from './product_9_3.png'
+import img9_4 from './product_9_4.png'
+
+import img10_1 from './product_10_1.png'
+import img10_2 from './product_10_2.png'
+import img10_3 from './product_10_3.png'
+import img10_4 from './product_10_4.png'
+
+import img11_1 from './product_11_1.png'
+import img11_2 from './product_11_2.png'
+import img11_3 from './product_11_3.png'
+import img11_4 from './product_11_4.png'
+
 
 // Blogs
 import blog1 from "../assets/blogs/blog1.png"
@@ -111,7 +136,72 @@ export const products = [
         popular: true
     },
 
+    {
+        _id: "7",
+        name: "WMNS AIR MAX SNDR",
+        description: "Originally engineered by our Alpha Project, the fan-favorite Air Max Sunder has been radically re-imagined and is being re-booted 25 years after its original release as the head-turning Air Max SNDR. Taking pride in the fact that it’s not just a carbon copy of the original cross trainer, the Air Max SNDR takes the iconic design into a contemporary environment and beyond. From the secure fit in the heel area to the neoprene shroud with zipper, this iconic sneaker continues to set new standards. The sleek colorway combines black overlays with an equally black coating and reflective inserts. Max Air cushioning in the heel and the Nike Air element in the forefoot also ensure first-class bounce and comfort.",
+        price: 220,
+        image: [img7_1, img7_2, img7_3, img7_4],
+        category: "Men",
+        subCategory: "Sports",
+        sizes: ["6","7", "8", "9","10","11",],
+        date: 1735843567062,
+        popular: false
+    },
 
+
+    {
+
+        _id: "8",
+        name: "BIRKENSTOCK ARIZONA EVA",
+        description: "The product Birkenstock - Arizona EVA in the color PURE SAGE is available at BSTN.",
+        price: 45,
+        image: [img8_1, img8_2, img8_3, img8_4],
+        category: "Men",
+        subCategory: "Slippers",
+        sizes: ["6","7", "8", "9","10","11"],
+        date: 1735843567062,
+        popular: false
+    },
+
+    {
+        _id: "9",
+        name: "ANTHONY EDWARDS 1 LOW",
+        description: "The signature sneaker A.E.1 Low from the collaboration between Evo Basketball and Anthony Edwards is perfect for true b-ball fans. Its ultra-lightweight combination of BOOST and Lightstrike midsole provides outstanding energy return for explosive moves. The rubber outsole provides stability on offense and defense and Anthony Edwards' signature branding completes the look.",
+        price: 220,
+        image: [img9_1, img9_2, img9_3, img9_4],
+        category: "Men",
+        subCategory: "Sports",
+        sizes: ["6","7", "8", "9","10","11",],
+        date: 1735843567062,
+        popular: false
+    },
+
+    {
+        _id: "10",
+        name: "ADILETTE",
+        description: "The Adilette dates back to 1983 and is a true classic in the Adidas range. This classic version in navy has white 3-stripe branding. Whether you're at home on the balcony or on holiday - with the Adilette you're ideally equipped for the summer.",
+        price: 220,
+        image: [img10_1, img10_2, img10_3, img10_4],
+        category: "Men",
+        subCategory: "Slippers",
+        sizes: ["6","7", "8", "9","10","11",],
+        date: 1735843567062,
+        popular: false
+    },
+
+    {
+        _id: "11",
+        name: "COPENHAGEN STUDIOS CPH90",
+        description: "The product Copenhagen Studios - CPH90 in the color SAND/WHITE is available at EvoStep.",
+        price: 240,
+        image: [img11_1, img11_2, img11_3, img11_4],
+        category: "Men",
+        subCategory: "Sneakers",
+        sizes: ["6","7", "8", "9","10","11",],
+        date: 1735843567062,
+        popular: true
+    },
 
 
 ]

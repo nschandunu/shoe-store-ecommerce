@@ -4,6 +4,7 @@ import { ShopContext } from '../context/shopContext';
 import { FaStar, FaStarHalfStroke, FaTruckArrowRight, FaTruckFast } from 'react-icons/fa6';
 import { FaHeart } from 'react-icons/fa';
 import { TbShoppingBagPlus } from 'react-icons/tb';
+import ProductDescription from '../components/ProductDescription';
 
 const Product = () => {
 
@@ -93,6 +94,7 @@ const Product = () => {
             </div>
           </div>
         </div>
+        <ProductDescription />
     </div>
   </div>
   )

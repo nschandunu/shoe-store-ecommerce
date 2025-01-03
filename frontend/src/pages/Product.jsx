@@ -18,7 +18,7 @@ const Product = () => {
     if (selectedProduct) {
       setProduct(selectedProduct);
       setImage(selectedProduct.image[0]);
-      console.log(selectedProduct);
+      //console.Log(selectedProduct)
     }
   }
 
@@ -36,13 +36,17 @@ const Product = () => {
         {/* Product Data */}
         <div>
           {/* Product Image */}
-            <div>
-              <div>
+            <div className='flex flex-1 gap-x-2 xl:flex-1'>
+              <div className='flexCenter flex-col gap-[7px] flex-wrap'>
                 {product.image.map((item, i) => (
-                  <img key={i} src={item} alt='producImg' className='max-h-[89px] rounded-lg' />
+                  <img onClick={()=> setImage(item)} key={i} src={item} alt='productImg' className='max-h-[89px] rounded-lg' />
                 ))}
               </div>
+              <div className='max-h-[377px] flex overflow-hidden'>
+                <img src={image} alt="productImg" className='w-auto max-h-[377px] rounded-xl bg-gray-10' />
+              </div>
             </div>
+          {/* Product info */}
         </div>
     </div>
   </div>

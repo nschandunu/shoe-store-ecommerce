@@ -5,6 +5,9 @@ import { FaStar, FaStarHalfStroke, FaTruckArrowRight, FaTruckFast } from 'react-
 import { FaHeart } from 'react-icons/fa';
 import { TbShoppingBagPlus } from 'react-icons/tb';
 import ProductDescription from '../components/ProductDescription';
+import ProductFeatures from '../components/ProductFeatures';
+import RelatedProducts from '../components/RelatedProducts';
+import Footer from '../components/Footer';
 
 const Product = () => {
 
@@ -33,9 +36,9 @@ const Product = () => {
 
   return (
     <div>
-      <div>
+      <div className='max-padd-container mt-3'>
         {/* Product Data */}
-        <div>
+        <div className='flex gap-12 flex-col xl:flex-row bg-white pb-16 rounded-2xl'>
           {/* Product Image */}
             <div className='flex flex-1 gap-x-2 xl:flex-1'>
               <div className='flexCenter flex-col gap-[7px] flex-wrap'>
@@ -48,12 +51,12 @@ const Product = () => {
               </div>
             </div>
           {/* Product info */}
-          <div>
-            <h3>{product.name}</h3>
+          <div className='flex-[1.5] rounded-2xl xl:px-7'>
+            <h3 className='h3 leading-none'>{product.name}</h3>
             {/* Rating and Prices */}
-            <div>
-              <div>
-                <div>
+            <div className='flex items-baseline gap-x-5'>
+              <div className='flex items-center gap-x-2 text-secondary'>
+                <div className='flex gap-x-2 text-secondary'>
                   <FaStar/>
                   <FaStar/>
                   <FaStar/>
@@ -61,18 +64,18 @@ const Product = () => {
                   <FaStar/>
                   <FaStarHalfStroke/>
                 </div>
-                <span>(122)</span>
+                <span className='medium-14'>(122)</span>
               </div>
             </div>
-            <h4>{currency}{product.price}.00</h4>
-            <p>{product.description}</p>
-            <div>
-              <div>
+            <h4 className='h4 my-2'>{currency}{product.price}.00</h4>
+            <p className='max-w-96'>{product.description}</p>
+            <div className='flex flex-col gap-4 my-4 mb-5'>
+              <div className='flex gap-2'>
                 {[...product.sizes].sort((a,b)=>{
                   const order = ["5","6", "7", "8", "9", "10", "11", "12"];
                   return order.indexOf(a) - order.indexOf(b)
                 }).map((item, i) => (
-                    <button>{item}</button>
+                    <button className={`${item === size ? "ring-1 ring-slate-900/20" : "ring-1 ring-slate-900/5"} medium-14 h-8 w-10 bg-primary rounded`}>{item}</button>
                 ))}
               </div>
             </div>
@@ -95,7 +98,10 @@ const Product = () => {
           </div>
         </div>
         <ProductDescription />
+        <ProductFeatures />
+        <RelatedProducts />
     </div>
+    
   </div>
   )
 }

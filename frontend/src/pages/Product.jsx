@@ -68,7 +68,7 @@ const Product = () => {
               </div>
             </div>
             <h4 className='h4 my-2'>{currency}{product.price}.00</h4>
-            <p className='max-w-96'>{product.description}</p>
+            <p className='max-w-[555]'>{product.description}</p>
             <div className='flex flex-col gap-4 my-4 mb-5'>
               <div className='flex gap-2'>
                 {[...product.sizes].sort((a,b)=>{
@@ -101,7 +101,7 @@ const Product = () => {
         <ProductFeatures />
         <RelatedProducts />
     </div>
-    
+    {/* <Footer/> */}
   </div>
   )
 }

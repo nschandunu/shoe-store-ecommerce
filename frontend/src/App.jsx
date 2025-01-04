@@ -6,10 +6,13 @@ import Testimonials from './pages/Testimonials'
 import Collection from './pages/Collection'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
     <main className='overflow-x-hidden text-[#404040]'> 
+      <ToastContainer />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

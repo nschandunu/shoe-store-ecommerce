@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Testimonials from './pages/Testimonials'
 import Collection from './pages/Collection'
 import Product from './pages/Product'
+import Cart from './pages/Cart'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/collection" element={<Collection />} />
         <Route path="/product/:productId" element={<Product />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/Cart" element={<Cart />} />
       </Routes>
     </main>
   )

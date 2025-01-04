@@ -40,7 +40,7 @@ const Header = () => {
                 {/* Search icon */}
                 <FaSearch className='text-lg cursor-pointer'/>
                 {/* Cart */}
-                <Link to={'/'} className='flex relative'>
+                <Link to={'/cart'} className='flex relative'>
                     <TbBasket className='text-[27px]'/>
                     <span className='bg-secondary text-white text-[12px] font-semibold absolute
                     left-1.5 -top-3.5 flexCenter w-4 h-4 rounded-full 

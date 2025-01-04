@@ -101,7 +101,7 @@ const Product = () => {
         <ProductFeatures />
         <RelatedProducts category={product.category} subCategory={product.subCategory}/>
     </div>
-    {/* <Footer/> */}
+    <Footer/>
   </div>
   )
 }

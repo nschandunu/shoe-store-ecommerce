@@ -75,22 +75,22 @@ const Product = () => {
                   const order = ["5","6", "7", "8", "9", "10", "11", "12"];
                   return order.indexOf(a) - order.indexOf(b)
                 }).map((item, i) => (
-                    <button className={`${item === size ? "ring-1 ring-slate-900/20" : "ring-1 ring-slate-900/5"} medium-14 h-8 w-10 bg-primary rounded`}>{item}</button>
+                    <button onClick={()=> setSize(item)} className={`${item === size ? "ring-1 ring-slate-900/20" : "ring-1 ring-slate-900/5"} medium-14 h-8 w-10 bg-primary rounded`}>{item}</button>
                 ))}
               </div>
             </div>
-            <div>
-              <button>
+            <div className='flex items-center gap-x-4'>
+              <button className='btn-secondary !rounded-lg w-1/2 flexCenter gap-x-2 capitalize'>
                 Add to Cart <TbShoppingBagPlus/>
               </button>
-              <button><FaHeart/ ></button>
+              <button className='btn-light !rounded-lg !py-3.5'><FaHeart/ ></button>
             </div>
-            <div>
+            <div className='flex items-center gap-x-2 mt-3'>
               <FaTruckFast className='text-lg'/>
-              <span>Free Delivery on orders over $300</span>
+              <span className='medium-14'>Free Delivery on orders over $300</span>
             </div>
             <hr className='my-3 w-2/3'/>
-            <div>
+            <div className='mt-2 flex flex-col gap-1 text-gray-30 text-xs'>
               <div>Authenticy You Can Trust</div>
               <div>Enjoy Cash on Delivery for Your Convenience</div>
               <div>Easy Returns and Exchanges Within 7 Days</div>

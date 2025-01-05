@@ -54,13 +54,11 @@ const ShopContextProvider = (props) => {
         return totalCount;
     };
 
-    useEffect(() => {
-        console.log(cartItems)
-    },[cartItems])
+ 
 
     
     const value = { currency, delivery_charges, navigate, products, token, setToken, search, setSearch, showSearch, 
-        setShowSearch, addToCart, getCartCount }
+        setShowSearch, addToCart, getCartCount, cartItems, setCartItems }
 
     return (
         <ShopContext.Provider value={value}>

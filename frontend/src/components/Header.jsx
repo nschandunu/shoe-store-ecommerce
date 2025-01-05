@@ -11,7 +11,7 @@ import { ShopContext } from '../context/shopContext'
 const Header = () => {
 
 
-    const {token} = useContext(ShopContext)
+    const {token, getCartCount} = useContext(ShopContext)
     const [menuOpened, setMenuOpened] = useState(false)
 
     const toggleMenu = () => setMenuOpened((prev) => !prev)
@@ -44,7 +44,7 @@ const Header = () => {
                     <TbBasket className='text-[27px]'/>
                     <span className='bg-secondary text-white text-[12px] font-semibold absolute
                     left-1.5 -top-3.5 flexCenter w-4 h-4 rounded-full 
-                    shadow-md'>0</span>
+                    shadow-md'>{getCartCount()}</span>
                 </Link>
                 {/* User Profile */}
                 <div className='group relative'>

@@ -82,7 +82,7 @@ const Cart = () => {
                     <div className="flex flex-col w-full">
                       <div className="flexBetween">
                         <h5 className="h5 !my-0 line-clamp-1">
-                          {productData.mame}
+                          {productData.name}
                         </h5>
                         <FaRegWindowClose className="cursor-pointer text-secondary" />
                       </div>
